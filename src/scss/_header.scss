@@ -1,0 +1,346 @@
+/* Header CSS */
+.header-area {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+
+    .classy-nav-container {
+        background-color: transparent;
+    }
+}
+
+.classy-navbar {
+    height: 100px;
+    transition-duration: 500ms;
+
+    @media #{$breakpoint-xs} {
+        height: 60px;
+    }
+
+    .classynav ul li a {
+        padding: 1.75rem 1rem;
+        height: auto;
+        line-height: 1;
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @media #{$breakpoint-lg} {
+            padding: 30px 15px;
+        }
+
+        @media #{$breakpoint-md} {
+            padding: 15px;
+            color: $heading;
+        }
+
+        @media #{$breakpoint-xs} {
+            padding: 15px;
+            color: $heading;
+        }
+
+        &:hover,
+        &:focus {
+            color: $white;
+
+            @media #{$breakpoint-md} {
+                color: $hover;
+            }
+
+            @media #{$breakpoint-xs} {
+                color: $hover;
+            }
+        }
+    }
+
+    .classynav>ul>li:hover>a {
+        color: $yellow;
+
+        @media #{$breakpoint-md} {
+            color: $primary;
+        }
+
+        @media #{$breakpoint-xs} {
+            color: $primary;
+        }
+    }
+
+    .classynav ul li li a {
+        padding: 14px 28px;
+        display: flex;
+        align-items: center;
+        color: $heading;
+
+        @media #{$breakpoint-lg} {
+            padding: 14px 18px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+
+        i {
+            flex: 0 0 40px;
+            max-width: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.25rem;
+            margin-right: 1rem;
+            border: 2px solid $border;
+            line-height: 36px;
+        }
+
+        i {
+            margin-right: 0.8rem;
+        }
+
+        span {
+            display: block;
+            color: $heading;
+            transition-duration: 400ms;
+
+            &:hover,
+            &:focus {
+                color: $hover;
+            }
+
+            span {
+                margin-top: 0.5rem;
+                color: $text;
+                font-size: 13px;
+                text-transform: initial;
+
+                &:hover,
+                &:focus {
+                    color: $text;
+                }
+            }
+        }
+    }
+
+    .classynav ul li .dropdown li a {
+        border-bottom: none;
+
+        @media #{$breakpoint-lg} {
+            padding: 14px 30px;
+        }
+    }
+
+    .classynav ul li.has-down>a::after,
+    .classynav ul li.megamenu-item>a::after {
+        color: $white;
+        display: none;
+    }
+}
+
+.header2 {
+    .classynav>ul>li:hover>a {
+        color: $primary;
+    }
+
+    .classynav ul li a {
+        color: $heading;
+
+        &:hover,
+        &:focus {
+            color: $hover;
+        }
+    }
+
+    .classynav ul li.has-down>a::after,
+    .classynav ul li.megamenu-item>a::after {
+        color: $heading;
+    }
+
+    .classynav>ul>li {
+        >a {
+
+            &::before {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.classy-navbar-toggler {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+
+    .navbarToggler {
+        position: relative;
+        z-index: 1;
+        width: 26px;
+        height: 26px;
+
+        span {
+            position: absolute;
+            z-index: auto;
+            width: 10px;
+            border-radius: 50%;
+            height: 10px;
+            margin: 0;
+
+            &:first-child {
+                top: 0;
+                left: 0;
+                background-color: $white;
+            }
+
+            &:nth-child(2) {
+                top: 0;
+                right: 0;
+                background-color: $yellow;
+            }
+
+            &:nth-child(3) {
+                bottom: 0;
+                left: 0;
+                background-color: $yellow;
+            }
+
+            &:last-child {
+                bottom: 0;
+                right: 0;
+                background-color: $white;
+            }
+        }
+
+        &.active {
+            span {
+                &:first-child {
+                    top: 0;
+                    left: 0;
+                    border-radius: 50% 50% 0% 50%;
+                    transform: rotate3d(0, 0, 1, 0deg);
+                }
+
+                &:nth-child(2) {
+                    top: 0;
+                    right: 0;
+                    opacity: 1;
+                    border-radius: 50% 50% 50% 0%;
+                }
+
+                &:nth-child(3) {
+                    bottom: 0;
+                    left: 0;
+                    top: auto;
+                    border-radius: 50% 0% 50% 50%;
+                    transform: rotate3d(0, 0, 1, 0deg);
+                }
+
+                &:last-child {
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 0% 50% 50% 50%;
+                }
+            }
+        }
+    }
+}
+
+.header2 {
+    .classy-navbar-toggler {
+        .navbarToggler {
+            span {
+                &:first-child {
+                    background-color: $primary;
+                }
+
+                &:nth-child(2) {
+                    background-color: $green;
+                }
+
+                &:nth-child(3) {
+                    background-color: $green;
+                }
+
+                &:last-child {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.classycloseIcon {
+    top: 27px;
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    width: 290px;
+    transition-duration: 430ms;
+    border-radius: 6px;
+    box-shadow: 0 0 88px 8px rgba(47, 91, 234, 0.125);
+    padding: 1rem 0;
+}
+
+.breakpoint-off .classynav ul li .megamenu {
+    transition-duration: 430ms;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 88px 8px rgba(47, 91, 234, 0.125);
+}
+
+.breakpoint-off .classynav ul li:hover .dropdown,
+.breakpoint-off .classynav ul li:hover .megamenu {
+    animation: fadeInUp 430ms ease-in;
+}
+
+.breakpoint-off .classynav ul li.megamenu-item:focus .megamenu,
+.breakpoint-off .classynav ul li.megamenu-item:hover .megamenu {
+    top: 92%;
+}
+
+.breakpoint-on .dd-trigger {
+    background-color: $heading;
+}
+
+.breakpoint-on .classynav ul li.has-down.active>.dd-trigger,
+.breakpoint-on .classynav ul li.megamenu-item.active>.dd-trigger {
+    background-color: $primary;
+}
+
+.breakpoint-on .classynav>ul>li>a {
+    background-color: $bg-gray;
+}
+
+.breakpoint-on .classy-navbar .classy-menu {
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(15, 30, 150, 0.2);
+}
+
+.header-area {
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001;
+        background-color: $hover;
+        box-shadow: 0 0.25rem 0.25rem 0 rgba(15, 30, 150, 0.2);
+
+        .classy-navbar {
+            height: 80px;
+
+            @media #{$breakpoint-xs} {
+                height: 60px;
+            }
+        }
+    }
+
+    &.header2 {
+        &.sticky {
+            background-color: $white;
+            box-shadow: 0 0.25rem 0.25rem 0 rgba(15, 30, 150, 0.2);
+        }
+    }
+}

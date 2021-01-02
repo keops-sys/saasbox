@@ -1,0 +1,116 @@
+/* Team CSS */
+.saasbox-team-area {
+    position: relative;
+    z-index: 1;
+    background-color: $heading;
+    overflow: hidden;
+
+    .section-heading {
+        &::after {
+            width: 180px;
+            height: 180px;
+            background-image: url(img/core-img/dot.png);
+            background-repeat: repeat;
+            content: "";
+            position: absolute;
+            bottom: -70px;
+            left: -70px;
+            z-index: -5;
+            opacity: 0.15;
+        }
+    }
+}
+
+/* Single Team CSS */
+.single-team {
+    position: relative;
+    z-index: 1;
+    border-radius: 200px 200px 200px 0;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -15px;
+        left: 15px;
+        z-index: -10;
+        border-radius: 200px 200px 200px 0;
+        border: 2px solid $yellow;
+        content: "";
+    }
+
+    img {
+        width: 100%;
+        border-radius: 200px 200px 200px 0;
+        transition-duration: 400ms;
+    }
+
+    .hover-overlay {
+        transition-duration: 400ms;
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+        left: 30px;
+        border-radius: 0;
+        z-index: 100;
+
+        p {
+            color: $white;
+            margin-bottom: 0;
+            line-height: 1;
+            background-color: $primary;
+            padding: 0.375rem 1rem;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 3rem;
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.team-members-area {
+    position: relative;
+    z-index: 1;
+
+    .col-12:nth-child(2) {
+        .single-team {
+            border-radius: 200px 0 200px 200px;
+            margin-top: 80px;
+
+            &::after {
+                border-radius: 200px 0 200px 200px;
+                border-color: $green;
+            }
+
+            img {
+                border-radius: 200px 0 200px 200px;
+            }
+
+            .hover-overlay {
+                text-align: right;
+                bottom: auto;
+                top: 30px;
+                left: auto;
+                right: 30px;
+            }
+        }
+    }
+}
+
+.team-member-page {
+
+    .single-team {
+        border-radius: 20px;
+
+        &::after {
+            display: none;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}

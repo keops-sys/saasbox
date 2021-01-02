@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head  
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb Area
+        .breadcrumb--area.bg-img.bg-overlay.jarallax(style="background-image: url('img/bg-img/7.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Service Creative
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page")
+                                        a(href="#") Service
+        include inc/about-3.pug
+
+        .container
+            .border-top
+
+        include inc/service-2.pug
+
+        include inc/cta.pug
+
+        include inc/footer-2.pug

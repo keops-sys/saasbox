@@ -1,0 +1,168 @@
+/* Service Area */
+.service-card {
+    transition-duration: 500ms;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(47, 91, 234, 0.05);
+    overflow: hidden;
+
+    &::after {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: $white;
+        opacity: 0.15;
+        top: 20px;
+        content: "";
+        left: 20px;
+        z-index: -1;
+    }
+
+    .icon {
+        position: relative;
+        z-index: 10;
+        transition-duration: 500ms;
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 45px;
+        background-color: $heading;
+        border-radius: 50%;
+        color: $white;
+        font-size: 2rem;
+
+        i {
+            line-height: 80px;
+        }
+
+        &::after {
+            position: absolute;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            content: "";
+            top: -10px;
+            left: -10px;
+            background-color: transparent;
+            border: 2px dashed $border;
+            border-radius: 50%;
+            z-index: -10;
+        }
+    }
+
+    h4 {
+        transition-duration: 500ms;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        transition-duration: 500ms;
+        margin-bottom: 0;
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+        transform: translateY(-10px);
+        box-shadow: 0 18px 56px rgba(47, 91, 234, 0.135);
+        background-color: $hover;
+        border-color: $hover;
+
+        .icon {
+            &::after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        h4,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.service-area {
+    position: relative;
+    z-index: 5;
+
+    .row {
+
+        .col-12:nth-child(2) {
+            .icon {
+                background-color: $green;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .col-12:nth-child(3) {
+            .icon {
+                background-color: $yellow;
+            }
+
+            img {
+                margin-left: -70px;
+            }
+        }
+
+        .col-12:nth-child(4) {
+            .icon {
+                background-color: $green;
+            }
+        }
+
+        .col-12:nth-child(5) {
+            .icon {
+                background-color: $yellow;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .col-12:nth-child(6) {
+            img {
+                margin-left: -70px;
+            }
+        }
+    }
+}
+
+.service3 {
+    .service-card {
+        border: 0;
+        box-shadow: none;
+
+        &.active,
+        &:hover,
+        &:focus {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 56px rgba(47, 91, 234, 0.135);
+            background-color: $white;
+
+            &::after {
+                background-color: $primary;
+            }
+
+            .icon {
+                &::after {
+                    border-color: $white;
+                }
+            }
+
+            h4 {
+                color: $hover;
+            }
+
+            p {
+                color: $text;
+            }
+        }
+    }
+}

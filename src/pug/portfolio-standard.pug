@@ -1,0 +1,138 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Portfolio Standard
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Portfolio Standard
+                                    
+    // Portfolio Area
+    .saasbox-portfolio-area.section-padding-120
+        .container                        
+            .row
+                .col-12
+                    .portfolio-menu.text-center.mb-80
+                        button.btn.portfolio-btn.active(type="button" data-filter="*") All Works
+                        button.btn.portfolio-btn(type="button" data-filter=".branding") Branding
+                        button.btn.portfolio-btn(type="button" data-filter=".design") Design
+                        button.btn.portfolio-btn(type="button" data-filter=".marketing") Marketing
+                        
+        .container
+            .row.saasbox-portfolio-filter.g-4
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.branding
+                    .single-portfolio-area
+                        img(src="img/bg-img/p1.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p1.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+                                    
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.branding
+                    .single-portfolio-area
+                        img(src="img/bg-img/p2.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p2.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+                                    
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.design
+                    .single-portfolio-area
+                        img(src="img/bg-img/p3.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p3.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+                                    
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.design
+                    .single-portfolio-area
+                        img(src="img/bg-img/p4.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p4.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+                                    
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.marketing
+                    .single-portfolio-area
+                        img(src="img/bg-img/p5.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p5.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+                                    
+                // Single Portfolio Area
+                .col-12.col-md-6.col-lg-4.single-portfolio-item.marketing
+                    .single-portfolio-area
+                        img(src="img/bg-img/p6.jpg" alt="")
+                        // Ovarlay Content
+                        .overlay-content
+                            .portfolio-title
+                                a(href="portfolio-details-one.html") Portfolio Title
+                            .portfolio-links
+                                a.image-popup(href="img/bg-img/p6.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                    i.lni-play
+                                a(href="#")
+                                    i.lni-heart
+                                a(href="portfolio-details-one.html")
+                                    i.lni-link
+            .row
+                .col-12
+                    .load-more-btn.text-center.mt-5
+                        a.btn.saasbox-btn.white-btn(href="#") Load More
+    
+    include inc/footer-2.pug

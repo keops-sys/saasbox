@@ -1,0 +1,268 @@
+/* Footer CSS */
+.footer-area {
+    position: relative;
+    z-index: 1;
+
+    .newsletter-form {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin-bottom: 30px;
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid $border;
+            border-radius: 0;
+            padding-left: 5px;
+            background-color: $white;
+            font-size: 14px;
+
+            &:focus {
+                border-bottom-color: $hover;
+                background-color: $white;
+            }
+        }
+    }
+
+    .footer-widget-area {
+        position: relative;
+        z-index: 1;
+
+        .widget-title {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                a {
+                    display: block;
+                    color: $text;
+                    margin-bottom: 0.75rem;
+                    font-size: 15px;
+
+                    @media #{$breakpoint-sm} {
+                        font-size: 14px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social-icon a {
+        font-size: 1rem;
+        color: $text;
+        margin-right: 1.25rem;
+
+        &:hover,
+        &:focus {
+            color: $hover;
+        }
+    }
+
+    .footer--content-text {
+        @media #{$breakpoint-xs} {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            @media #{$breakpoint-lg} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+        }
+
+        a {
+            @media #{$breakpoint-lg} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $hover;
+            }
+        }
+    }
+
+    .footer-nav {
+        ul {
+            justify-content: center;
+            padding-left: 0;
+
+            li {
+                a {
+                    color: $text;
+                    margin: 0 15px;
+
+                    @media #{$breakpoint-lg} {
+                        margin: 0 12px;
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-md} {
+                        margin: 0 6px;
+                        font-size: 14px;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        margin: 0 6px;
+                        font-size: 14px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $hover;
+                    }
+                }
+
+                &:first-child {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .language-dropdown {
+        position: relative;
+        z-index: 1;
+
+        @media #{$breakpoint-sm} {
+            margin-bottom: 15px;
+        }
+
+        .dropdown-menu {
+            padding: 1rem 0;
+            border: 1px solid $border;
+            border-radius: 0.75rem;
+            box-shadow: 0 0.25rem 0.25rem 0 rgba(15, 30, 150, 0.2);
+
+            .dropdown-item {
+                color: $text;
+                font-size: 14px;
+
+                &:hover,
+                &:focus {
+                    color: $hover;
+                    background-color: $bg-gray;
+                }
+            }
+        }
+    }
+
+    &.footer2 {
+        background-color: #0d0033;
+        overflow: hidden;
+
+        .footer-social-icon a {
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+
+        .footer-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .footer--content-text {
+            a {
+                color: $white;
+
+                &:hover,
+                &:focus {
+                    color: $yellow;
+                }
+            }
+        }
+
+        .newsletter-form {
+            .form-control {
+                background-color: transparent;
+                border-bottom-color: rgba(255, 255, 255, 0.16);
+
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-widget-area {
+            .widget-title {
+                color: $white;
+            }
+
+            ul {
+                li {
+                    a {
+                        color: rgba(255, 255, 255, 0.5);
+
+                        &:hover,
+                        &:focus {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-nav {
+            ul {
+                padding-left: 0;
+
+                li {
+                    a {
+
+                        &:hover,
+                        &:focus {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

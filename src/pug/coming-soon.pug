@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Logo Area
+        .container
+            .logo-area.text-center.py-5
+                a(href="index.html")
+                    img(src="img/core-img/logo.png" alt="")
+        
+        .container
+            .border-top
+
+        // Error Area
+        .saasbox-coming-soon-area.text-center.section-padding-120
+            .container
+                .row.justify-content-center.align-items-center
+                    .col-12.col-lg-7
+                        img.mb-80(src="img/bg-img/hero-8.png" alt="")
+                        h4 Coming Soon
+                        p We are getting back with an exciting stunning website.
+                        .d-flex.justify-content-center.flex-wrap#csClock.coming-soon-clock
+                        a.btn.saasbox-btn.mt-4(href="index.html") View Status
+
+        .container
+            .border-top
+
+        include inc/footer-3.pug

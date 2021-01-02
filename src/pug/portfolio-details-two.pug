@@ -1,0 +1,144 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Portfolio Details Two
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Portfolio Details
+                                    
+    // Portfolio Details Area
+    .portfolio-details-area.portfolio-content.section-padding-120-40
+        .container
+            .row.justify-content-center
+                .col-12.col-sm-9.col-lg-7
+                    .section-heading.text-center
+                        h2 Enam Alamin
+                        p It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template.
+                        
+            .row.justify-content-center
+                .col-12.col-md-4
+                    .project-meta.project-card.text-center.mb-80
+                        span 01
+                        h3 Date:
+                        p.mb-0 17 Oct 2020
+                        
+                .col-12.col-md-4
+                    .project-meta.project-card.text-center.mb-80
+                        span 02
+                        h3 Client:
+                        p.mb-0 Enam Alamin
+                        
+                .col-12.col-md-4
+                    .project-meta.project-card.text-center.mb-80
+                        span 03
+                        h3 Project Link:
+                        p.mb-0
+                            a(href="#" target="_blank") enamalamin.com                        
+            .row
+                .col-12
+                    .project-details-shots.project-details-shots-slide.owl-carousel.mb-80
+                        img(src="img/bg-img/p20.jpg" alt="")
+                        img(src="img/bg-img/p19.jpg" alt="")
+                            
+            .row.justify-content-center
+                .col-12.col-md-6
+                    .project-details-content.mb-80
+                        h5 Vision:
+                        p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                .col-12.col-md-6
+                    .project-details-content.mb-80
+                        h5 Mission:
+                        p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                        
+    // Related Project
+    .container
+        .border-top
+        
+    .related-project-area.section-padding-120
+        .container
+            .row
+                .col-12.col-lg-7
+                    .section-heading.mb-4
+                        h2 Related Projects
+            .row
+                .col-12
+                    .related-project-slide.owl-carousel
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p13.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p13.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p14.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p14.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p15.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p15.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p16.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p16.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+    
+    include inc/cta-2.pug
+    
+    include inc/footer.pug

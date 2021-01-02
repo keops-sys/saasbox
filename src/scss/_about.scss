@@ -1,0 +1,242 @@
+/* About CSS */
+.about-area {
+    position: relative;
+    z-index: 2;
+
+    &.about2 {
+        overflow: hidden;
+    }
+}
+
+.single-about-area {
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        display: block;
+        transition-duration: 500ms;
+        width: 80px;
+        height: 80px;
+        background-color: $heading;
+        margin-bottom: 30px;
+        text-align: center;
+        color: $white;
+        border-radius: 50%;
+        font-size: 36px;
+
+        i {
+            line-height: 80px;
+        }
+    }
+
+    h4 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition-duration: 500ms;
+        margin-bottom: 1rem;
+        overflow: hidden;
+
+        &::after {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            content: '';
+            top: 0;
+            left: -110%;
+            z-index: 2;
+        }
+    }
+
+    p {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+
+        h4 {
+            color: $primary;
+
+            &::after {
+                left: 110%;
+            }
+        }
+    }
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+
+    .col-12:nth-child(2) {
+        .single-about-area {
+            margin-top: 70px;
+
+            .icon {
+                background-color: $green;
+            }
+        }
+    }
+
+    .col-12:nth-child(3) {
+        .single-about-area {
+
+            @media #{$breakpoint-xs} {
+                margin-top: 70px;
+            }
+
+            @media #{$breakpoint-sm} {
+                margin-top: 0px;
+            }
+
+            .icon {
+                background-color: $primary;
+            }
+        }
+    }
+
+    .col-12:nth-child(4) {
+        .single-about-area {
+            margin-top: 70px;
+
+            .icon {
+                background-color: $yellow;
+            }
+        }
+    }
+}
+
+.aboutUs-thumbnail {
+    position: relative;
+    z-index: 1;
+    border-radius: .75rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 40px;
+        background-color: $yellow;
+        top: 50px;
+        right: 70%;
+        z-index: 10;
+        border-radius: 3px;
+    }
+
+    img {
+        border-radius: .75rem;
+    }
+}
+
+.aboutUs-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero3 {
+    .single-about-area {
+        position: relative;
+        z-index: 1;
+
+        .icon {
+            display: block;
+            transition-duration: 500ms;
+            width: 80px;
+            height: 80px;
+            background-color: $heading;
+            margin-bottom: 30px;
+            text-align: center;
+            color: $white;
+            border-radius: 50%;
+            font-size: 36px;
+
+            i {
+                line-height: 80px;
+            }
+        }
+
+        h4 {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition-duration: 500ms;
+            margin-bottom: 1rem;
+            overflow: hidden;
+
+            &::after {
+                transition-duration: 800ms;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $primary;
+                content: '';
+                top: 0;
+                left: -110%;
+                z-index: 2;
+            }
+        }
+
+        p {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+
+            h4 {
+                color: $primary;
+
+                &::after {
+                    left: 110%;
+                }
+            }
+        }
+    }
+}
+
+.about4 {
+    .aboutUs-thumbnail {
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            width: 308px;
+            height: 308px;
+            background-image: url(img/core-img/dot-blue.png);
+            background-repeat: repeat;
+            content: "";
+            position: absolute;
+            z-index: -5;
+            opacity: 1;
+            right: -40px;
+            top: -50px;
+        }
+    }
+}
+
+.about3 {
+    background-color: $white;
+}
+
+.hero-card {
+    background-color: $bg-gray;
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    i {
+        color: $primary;
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+}

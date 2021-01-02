@@ -1,0 +1,36 @@
+{
+  "name": "saasbox-bootstrap-5-multipurpose-html-template-for-saas-and-agency",
+  "version": "1.6.0",
+  "description": "Saasbox - Bootstrap 5 Multipurpose HTML template for Saas, Agency",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Designing-World",
+  "license": "Themeforest-License",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "browserslist": "^4.13.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha2",
+    "counterup": "^1.0.2",
+    "flag-icon-css": "^3.4.2",
+    "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.4",
+    "jarallax": "^1.10.6",
+    "jquery": "^2.2.4",
+    "jquery-animated-headlines": "^1.0.0",
+    "jquery-countdown": "^2.2.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel2": "^2.2.1",
+    "wowjs": "^1.1.3"
+  }
+}

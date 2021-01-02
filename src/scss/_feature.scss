@@ -1,0 +1,287 @@
+/* Feature CSS */
+.feature-card {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    transition-duration: 500ms;
+    overflow: hidden;
+
+    &::after {
+        transition-duration: 1000ms;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $white;
+        opacity: 0.10;
+        z-index: -1;
+        content: '';
+        bottom: -120px;
+        right: -120px;
+    }
+
+    i {
+        transition-duration: 500ms;
+        flex: 0 0 45px;
+        min-width: 45px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $heading;
+        text-align: center;
+        color: $white;
+        line-height: 45px;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    h5 {
+        color: $white;
+    }
+
+    h6 {
+        margin-bottom: 0;
+        transition-duration: 500ms;
+    }
+
+    span {
+        transition-duration: 500ms;
+        font-size: 14px;
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+        border-color: $heading;
+        background-color: $heading;
+        box-shadow: 0 18px 56px rgba(255, 255, 255, 0.175);
+
+        &::after {
+            bottom: -50px;
+            right: -40px;
+        }
+
+        i {
+            box-shadow: 0 2px 38px rgba(255, 255, 255, 0.4);
+        }
+
+        h6,
+        span {
+            color: $white;
+        }
+    }
+}
+
+.saasbox-features-area {
+    position: relative;
+    z-index: 1;
+    background-color: $primary;
+    overflow: hidden;
+
+    .background-shape {
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.09);
+        transform: rotate(-30deg);
+        top: -600px;
+        left: -500px;
+        z-index: -5;
+    }
+
+    .row .row {
+        .col-12:first-child {
+            .feature-card {
+                i {
+                    background-color: $green;
+                }
+            }
+        }
+
+        .col-12:nth-child(2) {
+            .feature-card {
+                i {
+                    background-color: $heading;
+                }
+            }
+        }
+
+        .col-12:nth-child(3) {
+            .feature-card {
+                i {
+                    background-color: $yellow;
+                    color: $heading;
+                }
+            }
+        }
+
+        .col-12:nth-child(4) {
+            .feature-card {
+                i {
+                    background-color: $primary;
+                }
+            }
+        }
+
+        .col-12:nth-child(5) {
+            .feature-card {
+                i {
+                    background-color: $green;
+                }
+            }
+        }
+
+        .col-12:nth-child(6) {
+            .feature-card {
+                i {
+                    background-color: $heading;
+                }
+            }
+        }
+    }
+
+    &.feature2 {
+        background-color: $bg-gray;
+    }
+}
+
+.feature3 {
+    position: relative;
+    z-index: 1;
+
+    .feature--content {
+        h6 {
+            padding: 0.5rem 1rem;
+            background-color: $bg-gray;
+            color: $primary;
+            border-radius: 36px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+
+            @media #{$breakpoint-lg} {
+                font-size: 2rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 1.75rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            li {
+                position: relative;
+                z-index: 1;
+                margin-bottom: 1rem;
+                padding-left: 2rem;
+                font-size: 1.25rem;
+
+                &::after {
+                    content: "\e94c";
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    font-family: "LineIcons";
+                    color: $primary;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 28px;
+                    z-index: 1;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.feature4 {
+    position: relative;
+    z-index: 1;
+
+    .feature-side-thumbnail {
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .feature--thumb {
+        position: relative;
+        z-index: 1;
+    }
+
+    .feature--text {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+
+            @media #{$breakpoint-xs} {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.feature-box-two {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(8, 17, 251, 0.9);
+    border-radius: 1rem;
+}
+
+.feature-card-box {
+    position: relative;
+    z-index: 1;
+
+    .feature-icon {
+        position: relative;
+        z-index: 1;
+        flex: 0 0 60px;
+        max-width: 60px;
+        width: 60px;
+
+        h4 {
+            color: $white;
+        }
+    }
+
+    .feature-text {
+        h5 {
+            color: $white;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+    }
+}

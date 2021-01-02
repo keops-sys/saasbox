@@ -1,0 +1,757 @@
+/* Hero CSS */
+.welcome-thumb {
+    position: relative;
+    z-index: 1;
+    margin-top: 75px;
+
+    @media #{$breakpoint-xs} {
+        margin-top: 0;
+    }
+}
+
+.background-animation {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+
+    .star-ani {
+        position: absolute;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        top: 15%;
+        left: 45%;
+        z-index: -1;
+        animation: rotateAnimation linear 39s infinite;
+
+        &::after {
+            position: absolute;
+            content: "\e950";
+            top: 10%;
+            left: 10%;
+            z-index: -1;
+            border-radius: 50%;
+            font-family: "LineIcons";
+            color: rgba(255, 255, 255, 0.26);
+            font-size: 22px;
+        }
+    }
+
+    .cloud-ani {
+        position: absolute;
+        border-radius: 50%;
+        width: 240px;
+        height: 240px;
+        top: 50%;
+        left: 60%;
+        z-index: -1;
+        animation: rotateAnimation linear 46s infinite;
+
+        &::after {
+            position: absolute;
+            content: "\e950";
+            top: 10%;
+            left: 10%;
+            z-index: -1;
+            border-radius: 50%;
+            font-family: "LineIcons";
+            color: rgba(255, 255, 255, 0.26);
+            font-size: 2.5rem;
+        }
+    }
+
+    .circle-ani {
+        position: absolute;
+        border-radius: 50%;
+        animation: rotateAnimation linear 34s infinite;
+        width: 180px;
+        height: 180px;
+        left: 10%;
+        top: 10%;
+        z-index: -1;
+
+        &::after {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            content: "";
+            top: 10%;
+            left: 10%;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            z-index: -1;
+            border-radius: 50%;
+        }
+    }
+
+    .triangle-ani {
+        position: absolute;
+        border-radius: 50%;
+        animation: rotateAnimation linear 40s infinite;
+        width: 20%;
+        height: 20%;
+        left: 30%;
+        top: 50%;
+        z-index: -1;
+
+        &::after {
+            width: 0;
+            height: 0;
+            position: absolute;
+            content: "";
+            border-top: 14px solid rgba(255, 255, 255, 0.16);
+            border-bottom: 14px solid transparent;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            z-index: -1;
+        }
+    }
+
+    .box-ani {
+        position: absolute;
+        border-radius: 50%;
+        animation: rotateAnimation linear 37s infinite;
+        width: 15%;
+        height: 18%;
+        left: 7%;
+        top: 70%;
+        z-index: -1;
+
+        &::after {
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            content: "";
+            z-index: -1;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    .line-ani {
+        position: absolute;
+        border-radius: 50%;
+        animation: rotateAnimation linear 43s infinite;
+        width: 10%;
+        height: 12%;
+        left: 7%;
+        top: 30%;
+        z-index: -1;
+
+        &::after {
+            width: 30px;
+            height: 3px;
+            position: absolute;
+            content: "";
+            z-index: -1;
+            background-color: rgba(255, 255, 255, 0.17);
+        }
+    }
+}
+
+@keyframes rotateAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.welcome-area {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    background-color: $primary;
+    overflow: hidden;
+
+    @media #{$breakpoint-lg} {
+        height: 750px;
+    }
+
+    @media #{$breakpoint-md} {
+        height: 650px;
+    }
+
+    @media #{$breakpoint-xs} {
+        height: 820px;
+    }
+
+    .background-image {
+        position: absolute !important;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .background-shape {
+        .circle1 {
+            width: 2200px;
+            height: 2200px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            position: absolute;
+            z-index: -30;
+            top: -1100px;
+            right: -1100px;
+
+            @media #{$breakpoint-lg} {
+                width: 1700px;
+                height: 1700px;
+                top: -850px;
+                right: -850px;
+            }
+
+            @media #{$breakpoint-md} {
+                width: 1700px;
+                height: 1700px;
+                top: -850px;
+                right: -850px;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 1700px;
+                height: 1700px;
+                top: -850px;
+                right: -850px;
+            }
+        }
+
+        .circle2 {
+            width: 1700px;
+            height: 1700px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            position: absolute;
+            z-index: -20;
+            top: -850px;
+            right: -850px;
+
+            @media #{$breakpoint-lg} {
+                width: 1200px;
+                height: 1200px;
+                top: -600px;
+                right: -600px;
+            }
+
+            @media #{$breakpoint-md} {
+                width: 1200px;
+                height: 1200px;
+                top: -600px;
+                right: -600px;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 1200px;
+                height: 1200px;
+                top: -600px;
+                right: -600px;
+            }
+        }
+
+        .circle3 {
+            width: 1200px;
+            height: 1200px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            position: absolute;
+            z-index: -10;
+            top: -600px;
+            right: -600px;
+
+            @media #{$breakpoint-lg} {
+                width: 700px;
+                height: 700px;
+                top: -350px;
+                right: -350px;
+            }
+
+            @media #{$breakpoint-md} {
+                width: 700px;
+                height: 700px;
+                top: -350px;
+                right: -350px;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 700px;
+                height: 700px;
+                top: -350px;
+                right: -350px;
+            }
+        }
+
+        .circle4 {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            position: absolute;
+            z-index: -10;
+            top: -350px;
+            right: -350px;
+
+            @media #{$breakpoint-lg} {
+                width: 200px;
+                height: 200px;
+                top: -100px;
+                right: -100px;
+            }
+
+            @media #{$breakpoint-md} {
+                width: 200px;
+                height: 200px;
+                top: -100px;
+                right: -100px;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 200px;
+                height: 200px;
+                top: -100px;
+                right: -100px;
+            }
+        }
+    }
+
+    .hero-background-shape {
+        position: absolute !important;
+        top: -1px;
+        right: -1px;
+        z-index: -1;
+    }
+
+    .welcome-content {
+        position: relative;
+        z-index: 1;
+        margin-top: 75px;
+
+        @media #{$breakpoint-xs} {
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: $white;
+
+            @media #{$breakpoint-lg} {
+                font-size: 2.5rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 2rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 1.75rem;
+            }
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: $white;
+
+            @media #{$breakpoint-lg} {
+                font-size: 1.15rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 1rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &.hero2 {
+        background-color: $white;
+
+        .hero2-big-circle {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            border: 4.5rem solid $bg-gray;
+            position: absolute !important;
+            left: -185px;
+            top: 54%;
+            z-index: -1;
+        }
+
+        .welcome-content {
+            h2 {
+                color: $heading;
+            }
+
+            p {
+                color: $text;
+            }
+        }
+
+        .background-animation {
+            .star-ani {
+                &::after {
+                    color: rgba(12, 82, 255, 0.26);
+                }
+            }
+
+            .cloud-ani {
+                &::after {
+                    color: rgba(12, 82, 255, 0.26);
+                }
+            }
+
+            .circle-ani {
+                &::after {
+                    border: 4px solid rgba(12, 82, 255, 0.13);
+                }
+            }
+
+            .triangle-ani {
+                &::after {
+                    border-top: 14px solid rgba(12, 82, 255, 0.12);
+                }
+            }
+
+            .box-ani {
+                &::after {
+                    background-color: rgba(12, 82, 255, 0.11);
+                }
+            }
+
+            .line-ani {
+                &::after {
+                    background-color: rgba(12, 82, 255, 0.17);
+                }
+            }
+        }
+    }
+
+    &.hero3 {
+        background-color: $white;
+
+        @media #{$breakpoint-xs} {
+            .container.h-100 {
+                height: auto !important;
+
+                .row.h-100 {
+                    height: auto !important;
+                }
+            }
+        }
+
+        .hero3-bg-shape {
+            position: absolute !important;
+            top: -1px;
+            left: 0;
+            z-index: -1;
+
+            @media #{$breakpoint-lg} {
+                top: 30px;
+
+                &::after {
+                    position: absolute;
+                    width: 100%;
+                    height: 100px;
+                    top: -95px;
+                    left: 0;
+                    content: "";
+                    background-color: $primary;
+                    z-index: -1;
+                }
+            }
+
+            @media #{$breakpoint-md} {
+                top: 35px;
+
+                &::after {
+                    position: absolute;
+                    width: 100%;
+                    height: 100px;
+                    top: -95px;
+                    left: 0;
+                    content: "";
+                    background-color: $primary;
+                    z-index: -1;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                top: 60px;
+
+                &::after {
+                    position: absolute;
+                    width: 100%;
+                    height: 100px;
+                    top: -95px;
+                    left: 0;
+                    content: "";
+                    background-color: $primary;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .hero-side-img {
+            position: absolute;
+            width: 40%;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            margin-top: 75px;
+
+            img {
+                max-height: 100%;
+                box-shadow: 0 .25rem 0.25rem 0 rgba(12, 82, 255, 0.172);
+                border-radius: .5rem;
+            }
+
+            .second-img {
+                position: absolute;
+                bottom: 40px;
+                left: -40px;
+                border-radius: .5rem;
+                z-index: 1;
+                animation: slideAnimation linear 12s infinite;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 75%;
+                top: auto;
+                transform: translateY(0%);
+                margin-top: 0;
+                bottom: 10%;
+            }
+        }
+
+        .welcome-content {
+            @media #{$breakpoint-xs} {
+                margin-top: 90px;
+            }
+
+            h2 {
+                @media #{$breakpoint-xs} {
+                    background-color: $bg-gray;
+                    display: inline-block;
+                    padding: 0 .5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .animated--headline {
+                h4 {
+                    @media #{$breakpoint-md} {
+                        font-size: 1.25rem;
+                    }
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 1rem;
+                        background-color: $bg-gray;
+                        display: inline-block;
+                        padding: 0 .5rem;
+                    }
+
+                    @media #{$breakpoint-sm} {
+                        font-size: 1.25rem;
+                    }
+                }
+
+                span {
+                    padding: 0;
+                }
+
+                .ah-words-wrapper {
+                    margin-left: 10px;
+                    color: $primary;
+
+                    b {
+                        padding-right: 0.5rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            h2 {
+                color: $heading;
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            p {
+                color: $text;
+            }
+        }
+    }
+
+    &.hero4 {
+        background-color: $white;
+
+        @media #{$breakpoint-xs} {
+            height: 1050px;
+        }
+
+        @media #{$breakpoint-sm} {
+            height: 1150px;
+        }
+
+        .hero4-bg-shape {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            z-index: -1;
+        }
+
+        .hero4-bg-shape2 {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            z-index: -1;
+        }
+
+        .hero-slides .owl-nav {
+            position: relative;
+            margin-top: 3rem;
+            display: flex;
+
+            @media #{$breakpoint-xs} {
+                margin-top: 1.5rem;
+            }
+
+            .owl-prev,
+            .owl-next {
+                width: 50px;
+                height: 50px;
+                background-color: $heading;
+                border-radius: 50%;
+                text-align: center;
+                color: $white;
+                font-size: 1.25rem;
+                transition-duration: 500ms;
+
+                @media #{$breakpoint-xs} {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1rem;
+                }
+
+                i {
+                    line-height: 50px;
+
+                    @media #{$breakpoint-xs} {
+                        line-height: 40px;
+                    }
+                }
+
+                &:hover {
+                    background-color: $yellow;
+                    color: $heading;
+                }
+            }
+
+            .owl-next {
+                margin-left: 1rem;
+            }
+        }
+
+        .welcome-content {
+            h2 {
+                color: $heading;
+            }
+
+            p {
+                color: $text;
+            }
+        }
+
+        .key-quote {
+            font-size: 14px;
+            padding: 0.5rem 1rem;
+            background-color: $yellow;
+            display: inline-block;
+            margin-bottom: 1rem;
+            border-radius: .5rem;
+            color: $heading;
+
+            @media #{$breakpoint-md} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 11px;
+            }
+        }
+
+        .hero-video-card {
+            position: relative;
+            z-index: 1;
+            border: 0;
+            box-shadow: 0 16px 48px 12px rgba(12, 82, 255, 0.17);
+            border-radius: 1rem;
+            background-color: transparent;
+            margin-top: 75px;
+
+            @media #{$breakpoint-xs} {
+                margin-top: 0;
+            }
+
+            .video-shape {
+                position: absolute;
+                bottom: -70px;
+                left: -70px;
+                z-index: -1;
+                animation: slideAnimation linear 12s infinite;
+            }
+
+            .video-card-slides {
+                border-radius: 1rem;
+
+                div {
+                    border-radius: 1rem;
+                }
+
+                img {
+                    border-radius: 1rem;
+                }
+            }
+
+            .video-play-btn {
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+                background-color: $white;
+                color: $heading;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 1rem;
+                z-index: 99;
+
+                i {
+                    line-height: 50px;
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes slideAnimation {
+    50% {
+        bottom: 0;
+    }
+}
+
+@keyframes slideAnimation {
+    50% {
+        bottom: 0;
+    }
+}

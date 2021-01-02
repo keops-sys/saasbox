@@ -1,0 +1,135 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Portfolio Details One
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Portfolio Details
+                                    
+    // Portfolio Details Area
+    .portfolio-details-area.portfolio-content.section-padding-120
+        .container
+            .row.justify-content-center
+                .col-12.col-lg-7
+                    .section-heading.text-center
+                        h2 Enam Alamin
+                        p It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template.
+                            
+            .row.justify-content-center            
+                .col-12
+                    .project-details-shots.mb-80
+                        img.w-100(src="img/bg-img/p19.jpg" alt="")
+
+                .col-12.col-md-10
+                    .project-details-content.mb-80
+                        h5 In brief:
+                        p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                        p.mb-0 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia maiores commodi nulla quidem quos ex natus aliquid dicta laboriosam temporibus, cum voluptate veritatis numquam similique perferendis nesciunt, quo maxime quis voluptates!
+
+                .col-12.col-md-10
+                    .project-share-info
+                        a(href="#")
+                            i.fa.fa-facebook
+                        a(href="#")
+                            i.fa.fa-twitter
+                        a(href="#")
+                            i.fa.fa-linkedin
+                        a(href="#")
+                            i.fa.fa-pinterest
+                        a(href="#")
+                            i.fa.fa-youtube
+                        
+    // Related Project
+    .container
+        .border-top
+    
+    // Related Project Area
+    .related-project-area.section-padding-120
+        .container
+            .row
+                .col-12.col-sm-9.col-lg-7
+                    .section-heading.mb-4
+                        h2 Related Projects
+            .row
+                .col-12
+                    // Related Project Slide
+                    .related-project-slide.owl-carousel
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p18.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p18.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p17.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p17.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p16.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p16.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p15.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p15.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+    
+    include inc/cta.pug
+    
+    include inc/footer.pug

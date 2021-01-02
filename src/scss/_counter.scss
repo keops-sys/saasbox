@@ -1,0 +1,116 @@
+/* Counter CSS */
+.single-cool-fact {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    h2 {
+        position: relative;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        color: $white;
+        background-color: $green;
+        margin: 0 auto 2rem;
+        line-height: 120px;
+
+        @media #{$breakpoint-sm} {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 1.5rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            top: -20px;
+            left: -20px;
+            z-index: -10;
+            border: 20px solid $bg-gray;
+            background-color: transparent;
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+}
+
+.saasbox-cool-facts-area {
+    position: relative;
+    z-index: 1;
+
+    .col-12:nth-child(2) {
+        .single-cool-fact h2 {
+            background-color: $primary;
+        }
+    }
+
+    .col-12:nth-child(3) {
+        .single-cool-fact h2 {
+            background-color: $heading;
+        }
+    }
+}
+
+.circle-animation {
+    .circle1 {
+        position: absolute;
+        top: 12%;
+        left: 23%;
+        width: 10px;
+        height: 10px;
+        background-color: $yellow;
+        border-radius: 50%;
+        z-index: -1;
+        animation: circleAnimation linear 4s infinite;
+    }
+
+    .circle2 {
+        position: absolute;
+        top: 70%;
+        left: 12%;
+        width: 10px;
+        height: 10px;
+        background-color: $heading;
+        border-radius: 50%;
+        z-index: -1;
+        animation: circleAnimation linear 7s infinite;
+    }
+
+    .circle3 {
+        position: absolute;
+        top: 60%;
+        left: 85%;
+        width: 10px;
+        height: 10px;
+        background-color: $primary;
+        border-radius: 50%;
+        z-index: -1;
+        animation: circleAnimation linear 6s infinite;
+    }
+
+    .circle4 {
+        position: absolute;
+        top: 120%;
+        left: 90%;
+        width: 10px;
+        height: 10px;
+        background-color: $green;
+        border-radius: 50%;
+        z-index: -1;
+        animation: circleAnimation linear 3s infinite;
+    }
+}
+
+@keyframes circleAnimation {
+    50% {
+        transform: scale(2);
+    }
+}

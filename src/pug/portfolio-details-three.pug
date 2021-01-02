@@ -1,0 +1,168 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Portfolio Details Three
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Portfolio Details
+                                    
+    // Portfolio Details Area
+    .portfolio-details-area.portfolio-content.section-padding-120-90
+        .container
+            .row.align-items-end
+                .col-12.col-md-8.col-lg-6
+                    .section-heading
+                        h2 Enam Alamin
+                        p It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template.
+                        
+                .col-12.col-md-4.col-lg-6
+                    .project-meta.text-md-right.mb-80
+                        a.btn.saasbox-btn(href="#") Live Demo
+                        
+            .row
+                .col-12.col-md-4
+                    .project-meta.mb-5
+                        h3 Date:
+                        p.mb-0 17 Oct 2020
+                        
+                    .project-meta.mb-5
+                        h3 Client:
+                        p.mb-0 Enam Alamin
+                        
+                    .project-meta.mb-5
+                        h3 Budget:
+                        p.mb-0 $1200
+                            
+                    .project-details-content.mb-5
+                        h5 Summary:
+                        p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.
+                            
+                    .project-details-content.mb-5
+                        h5 Mission:
+                        p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        
+                    .project-share-info
+                        a(href="#")
+                            i.fa.fa-facebook
+                        a(href="#")
+                            i.fa.fa-twitter
+                        a(href="#")
+                            i.fa.fa-linkedin
+                        a(href="#")
+                            i.fa.fa-pinterest
+                            
+                .col-12.col-md-8
+                    .project-details-shots.mt-5.mt-md-0
+                        .row.saasbox-portfolio-filter.g-4
+                            // Project Image
+                            .col-12.col-lg-6.single-portfolio-item
+                                .project-img
+                                    img(src="img/bg-img/p10.jpg" alt="")
+                                    
+                            // Project Image
+                            .col-12.col-lg-6.single-portfolio-item
+                                .project-img
+                                    img(src="img/bg-img/p13.jpg" alt="")
+                                    
+                            // Project Image
+                            .col-12.col-lg-6.single-portfolio-item
+                                .project-img
+                                    img(src="img/bg-img/p11.jpg" alt="")
+                                    
+                            // Project Image
+                            .col-12.col-lg-6.single-portfolio-item
+                                .project-img
+                                    img(src="img/bg-img/p14.jpg" alt="")
+                        
+    // Related Project
+    .container
+        .border-top
+        
+    .related-project-area.section-padding-120
+        .container
+            .row
+                .col-12.col-lg-7
+                    .section-heading.mb-4
+                        h2 Related Projects
+            .row
+                .col-12
+                    .related-project-slide.owl-carousel
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p13.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p13.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p14.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p14.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p15.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p15.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+                                        
+                        // Single Slide
+                        .single-portfolio-area.no-boxshadow.border.mt-3
+                            img(src="img/bg-img/p16.jpg" alt="")
+                            // Ovarlay Content
+                            .overlay-content
+                                .portfolio-title
+                                    a(href="portfolio-details-one.html") Portfolio Title
+                                .portfolio-links
+                                    a.image-popup(href="img/bg-img/p16.jpg" data-effect="mfp-zoom-in" title="Portfolio Title")
+                                        i.lni-play
+                                    a(href="#")
+                                        i.lni-heart
+                                    a(href="portfolio-details-one.html")
+                                        i.lni-link
+    
+    include inc/cta-3.pug
+    
+    include inc/footer.pug

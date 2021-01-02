@@ -1,0 +1,200 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.bg-img.bg-overlay.jarallax(style="background-image: url('img/bg-img/7.jpg');")
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Blog Card
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Blog
+    
+    // saasbox Blog Area
+    .saasbox--blog--area.blog-card-page.section-padding-120
+        .container
+            .row.g-5
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        .image-wrap
+                            img.card-img-top(src="img/bg-img/blog1.jpg" alt="")
+                            // Video
+                            span.video-content
+                                a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                    i.lni-play
+                            
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 15, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t1.png" alt="")
+                                span.text-muted 2 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        a(href="#")
+                            img.card-img-top(src="img/bg-img/blog2.jpg" alt="")
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 21, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 The reason why everyone love business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t2.png" alt="")
+                                span.text-muted 7 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        .image-wrap
+                            img.card-img-top(src="img/bg-img/blog3.jpg" alt="")
+                            // Video
+                            span.video-content
+                                a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                    i.lni-play
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 29, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t3.png" alt="")
+                                span.text-muted 4 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        a(href="#")
+                            img.card-img-top(src="img/bg-img/blog7.jpg" alt="")
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 15, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t1.png" alt="")
+                                span.text-muted 2 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        a(href="#")
+                            img.card-img-top(src="img/bg-img/blog8.jpg" alt="")
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 21, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 The reason why everyone love business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t2.png" alt="")
+                                span.text-muted 7 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        .image-wrap
+                            img.card-img-top(src="img/bg-img/blog9.jpg" alt="")
+                            // Video
+                            span.video-content
+                                a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                    i.lni-play
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 29, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business.
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t3.png" alt="")
+                                span.text-muted 4 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        a(href="#")
+                            img.card-img-top(src="img/bg-img/blog10.jpg" alt="")
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 15, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t1.png" alt="")
+                                span.text-muted 2 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        a(href="#")
+                            img.card-img-top(src="img/bg-img/blog11.jpg" alt="")
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 21, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 The reason why everyone love business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t2.png" alt="")
+                                span.text-muted 7 min read
+                                
+                // Single Blog Post
+                .col-12.col-md-6.col-lg-4
+                    .card.blog-card
+                        .image-wrap
+                            img.card-img-top(src="img/bg-img/blog12.jpg" alt="")
+                            // Video
+                            span.video-content
+                                a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                    i.lni-play
+                        .post-content.p-4
+                            a.d-block.text-muted.mb-2(href="#") Sep 29, 2020
+                            a.post-title.d-block.mb-2(href="blog-card.html")
+                                h4 Seven ways agency can improve your business
+                            p It's crafted with the latest trend of design.
+                            .post-meta.d-flex.align-items-center.justify-content-between
+                                a.post-author(href="#")
+                                    img(src="img/bg-img/t3.png" alt="")
+                                span.text-muted 4 min read
+                                
+            // Pagination Area
+            .saasbox-pagination-area.mt-5
+                nav(aria-label="Page navigation example")
+                    ul.pagination.justify-content-center
+                        li.page-item.active
+                            a.page-link(href="#") 1
+                        li.page-item
+                            a.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") 4
+                        li.page-item
+                            a.page-link(href="#") -
+                        li.page-item
+                            a.page-link(href="#") 9
+    
+    include inc/cta-3.pug
+    
+    include inc/footer.pug

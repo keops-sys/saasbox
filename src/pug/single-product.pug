@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Product Details
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Shop
+    
+    // Product Details Area
+    .product-details-area.product-details-page.section-padding-120
+        .container
+            .row.justify-content-center
+                .col-12.col-md-9.col-lg-6
+                    // Product Image Wrapper
+                    .product-image-wrapper.mb-5
+                        img.w-100(src="img/bg-img/shop1.jpg" alt="")
+                        // Related Image Carousel
+                        .related-image-carousel.owl-carousel
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop1.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop1.jpg" alt="")
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop2.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop2.jpg" alt="")
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop3.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop3.jpg" alt="")
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop4.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop4.jpg" alt="")
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop5.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop5.jpg" alt="")
+                            // Single Slide
+                            a.image-popup(href="img/bg-img/shop6.jpg" data-effect="mfp-zoom-in" title="Shop Image")
+                                img(src="img/bg-img/shop6.jpg" alt="")
+                                
+                // Product Description
+                .col-12.col-md-9.col-lg-6
+                    .card.product-description-card.mb-5
+                        h6.product-meta-title.mb-0.pl-5.py-4 About Product
+                        .card-body.p-3.p-sm-5
+                            h4.mb-3 Bonsai Tree with Superb Pot
+                            h3.product-price.mb-4 $19.99
+                                span $32.89
+                            h6.mb-4 36 Product Left                            
+                            p It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template. It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template. It's crafted with the latest trend of design & coded with all modern approaches.
+
+                            form.d-flex.align-items-end.mt-4(action="#")
+                                .form-group.mb-0
+                                    label.mr-2.mb-2(for="totalQuantity") Quantity
+                                    input.form-control#totalQuantity(min="1" max="12" name="quantity" value="1")
+                                button.btn.saasbox-btn.ml-3(type="submit") Buy Now
+                
+                // Product Review
+                .col-12.col-md-9.col-lg-12
+                    .card.product-review-card
+                        h6.product-meta-title.mb-0.pl-5.py-4 Product Reviews
+                        .card-body.p-5.text-center
+                            ul.ratings-list.d-flex.align-items-center.justify-content-center.mb-3
+                                li.active
+                                    i.lni-star
+                                li.active
+                                    i.lni-star
+                                li.active
+                                    i.lni-star
+                                li.active
+                                    i.lni-star
+                                li.active
+                                    i.lni-star
+                            span 4.89 out of 5.00 (203 reviews)
+                            
+    include inc/cta-3.pug
+    
+    include inc/footer.pug

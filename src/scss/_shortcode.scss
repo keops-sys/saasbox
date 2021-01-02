@@ -1,0 +1,212 @@
+/* Shortcodes CSS */
+.h-100vh {
+    height: 100vh !important;
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $primary;
+        opacity: 0.85;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.saasbox-btn {
+    border: none;
+    display: inline-block;
+    color: $white;
+    border-radius: 4px;
+    padding: 0 1.75rem;
+    font-size: 14px;
+    background-color: $primary;
+    height: 49px;
+    line-height: 49px;
+    text-transform: capitalize;
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $primary;
+        box-shadow: 0 3px 42px 2px rgba(12, 82, 255, 0.175);
+        line-height: 49px;
+    }
+
+    &.white-btn {
+        background-color: $heading;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: $yellow;
+            color: $heading;
+            box-shadow: 0 3px 42px 2px rgba(255, 255, 255, 0.175);
+        }
+    }
+
+    &.white-btn-2 {
+        background-color: $yellow;
+        color: $heading;
+
+        &:hover,
+        &:focus {
+            background-color: $primary;
+            color: $white;
+            box-shadow: 0 3px 42px 2px rgba(255, 255, 255, 0.175);
+        }
+    }
+
+    &.btn-sm {
+        padding: 0 1rem;
+        height: 36px;
+        line-height: 36px;
+        background-color: $yellow;
+        color: $heading;
+        font-size: 13px;
+
+        &:hover,
+        &:focus {
+            background-color: $heading;
+            color: $white;
+        }
+    }
+}
+
+.saasbox-btn-2 {
+    padding: 0;
+    color: $primary;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+        color: $green;
+    }
+}
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 85px;
+
+    i {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+        background-color: $heading;
+        color: $white;
+        border-radius: 50%;
+        line-height: 60px;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    &.text-center i {
+        margin: 0 auto 15px;
+    }
+
+    span {
+        color: $hover;
+    }
+
+    h6 {
+        margin-bottom: 1rem;
+        color: $text;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+
+        @media #{$breakpoint-lg} {
+            font-size: 2.25rem;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 2rem;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 1.5rem;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 0;
+
+        @media #{$breakpoint-xs} {
+            font-size: 16px;
+        }
+    }
+
+    &.white {
+        span {
+            color: $yellow;
+        }
+
+        h6,
+        h2,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.card {
+    border-color: $border;
+    border-radius: 6px;
+}
+
+.card-img-top {
+    border-top-left-radius: calc(6px - 1px);
+    border-top-right-radius: calc(6px - 1px);
+}
+
+.border,
+.border-left,
+.border-right,
+.border-bottom,
+.border-top {
+    border-color: $border !important;
+}
+
+.mfp-iframe-holder .mfp-content {
+    max-width: 1100px;
+}
+
+.border-dashed {
+    border-top: 2px dashed $border !important;
+}
+
+.classynav ul {
+    padding-left: 0;
+}

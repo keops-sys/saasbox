@@ -1,0 +1,48 @@
+/* CTA Area */
+.cta-area {
+    position: relative;
+    z-index: 1;
+    background-color: $primary;
+
+    .cta-text {
+        h2 {
+            font-size: 2.75rem;
+            color: $white;
+            margin-bottom: 3rem;
+
+            @media #{$breakpoint-lg} {
+                font-size: 2.5rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 2rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 1.5rem;
+            }
+
+            @media #{$breakpoint-sm} {
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    &.cta4 {
+        background-color: $white;
+
+        .cta-text {
+            text-align: center;
+
+            h2 {
+                font-size: 2.25rem;
+                color: $heading;
+                margin-bottom: 1rem;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

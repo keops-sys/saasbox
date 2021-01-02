@@ -1,0 +1,15 @@
+/* Error CSS */
+.saasbox-error-area {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    h2 {
+        font-size: 7rem;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+}

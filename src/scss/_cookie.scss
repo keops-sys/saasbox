@@ -1,0 +1,47 @@
+/* Cookie Alert CSS */
+.cookiealert {
+    position: fixed;
+    background-color: $heading;
+    bottom: 30px;
+    left: 30px;
+    width: 400px;
+    z-index: 9999;
+    opacity: 0;
+    border-radius: .75rem;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    padding: 2rem;
+
+    @media #{$breakpoint-xs} {
+        width: 280px;
+        padding: 1.5rem;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        width: 340px;
+    }
+
+    @media #{$breakpoint-sm} {
+        width: 400px;
+    }
+
+    p {
+        font-size: 14px;
+        color: $white;
+
+        a {
+            color: $white;
+            text-decoration: underline;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: 0s 1000ms;
+    }
+}

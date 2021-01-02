@@ -1,0 +1,106 @@
+/* ----------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: Saasbox - Bootstrap 5 Multipurpose HTML Template for Saas & Agency
+Template Author: Designing World
+Template Author URL: https://themeforest.net/user/designing-world
+Version: 1.6.0
+Last Updated: Oct 7, 2020
+---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+[Table of Contents]
+    * Google Fonts
+    * Include Third Party CSS Library
+        + Bootstrap CSS
+        + Classy Nav CSS
+        + Animate CSS
+        + Owl Carousel CSS
+        + Magnific Popup CSS
+        + Animated Headline CSS
+        + Line Icons CSS
+        + Font Awesome CSS
+        + Flag Icon CSS
+    * Template Mixins
+        + Flex
+        + Miscellaneous
+    * Template Responsive
+    * Template Variables
+    * Basic Styles
+        + Reboot CSS
+        + Shortcodes CSS
+    * Components Styles
+            + Preloader CSS
+            + Header CSS
+            + Hero CSS
+            + About CSS
+            + Tab CSS
+            + Service CSS
+            + Pricing CSS
+            + Feature CSS
+            + Team CSS
+            + Partner CSS
+            + Portfolio CSS
+            + Feedback CSS
+            + Video CSS
+            + Counter CSS
+            + Blog CSS
+            + Footer CSS
+            + CTA CSS
+            + Cookie CSS
+            + FAQ CSS
+            + Breadcrumb CSS
+            + Shop CSS
+            + Error CSS
+            + Register CSS
+            + Contact CSS
+            + Demo CSS
+
+# [font-family]
+'Inter', sans-serif;
+---------------------------------------------------------- */
+
+/* Import Fonts & All CSS Files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url(css/bootstrap.min.css);
+@import url(css/default/classy-nav.min.css);
+@import url(css/animate.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/magnific-popup.css);
+@import url(css/jquery.animatedheadline.css);
+@import url(css/default/lineicons.min.css);
+@import url(css/font-awesome.min.css);
+@import url(css/flag-icon.min.css);
+
+@import "responsive.scss";
+@import "variables.scss";
+
+@import "reboot.scss";
+@import "shortcode.scss";
+
+@import "preloader.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "about.scss";
+@import "tab.scss";
+@import "service.scss";
+@import "pricing.scss";
+@import "feature.scss";
+@import "team.scss";
+@import "partner.scss";
+@import "portfolio.scss";
+@import "feedback.scss";
+@import "video.scss";
+@import "counter.scss";
+@import "blog.scss";
+@import "footer.scss";
+@import "cta.scss";
+@import "cookie.scss";
+@import "faq.scss";
+@import "breadcrumb.scss";
+@import "shop.scss";
+@import "error.scss";
+@import "register.scss";
+@import "contact.scss";
+@import "demo.scss";

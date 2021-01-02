@@ -1,0 +1,223 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header-2.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.white-bg-breadcrumb
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Shop Fullwidth
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Shop
+                                    
+    // Shop Meta
+    .shop-meta.section-padding-120-0
+        .container
+            .row
+                // Shop Meta Data
+                .col-12
+                    .shop-meta-data.d-sm-flex.align-items-center.justify-content-between
+                        // Total Product View
+                        .total-product-view.mb-4.mb-sm-0
+                            span Viewing
+                                span.rs-counter 9
+                                | products out of
+                                span.rs-counter 77
+                        // Sorting Data
+                        select
+                            option(selected) Short by Popularity
+                            option(value="1") Short by Newest
+                            option(value="2") Short by Sales
+                            option(value="3") Short by Ratings
+                        
+    // Shop Area
+    .shop--area.shop-fullwidth.section-padding-120
+        .container
+            .row.g-5
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop1.jpg" alt="")
+                            // Love Products
+                            a.love-product.active(href="#" data-toggle="tooltip" data-placement="right" title="Liked")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Bonsai Tree
+                                h6.price.mb-0 $19.99
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop2.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Milk Cookie Biscuit
+                                h6.price.mb-0 $8.58
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop3.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Bonsai Tree
+                                h6.price.mb-0 $11.45
+                                    span $16.78
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop4.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Sony PS4 Original
+                                h6.price.mb-0 $78.40
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop5.jpg" alt="")
+                            // Love Products
+                            a.love-product.active(href="#" data-toggle="tooltip" data-placement="right" title="Liked")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Young Living Patchouili
+                                h6.price.mb-0 $16.65
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop6.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Onne Beauty
+                                h6.price.mb-0 $12.30
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop7.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Camera Sticker
+                                h6.price.mb-0 $6.50
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop8.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 iPad
+                                h6.price.mb-0 $300.98
+                                    span $400.63
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+
+                // Single Shop Card
+                .col-12.col-sm-6.col-lg-4
+                    .card.shop-card
+                        .product-img-wrap
+                            img.card-img-top(src="img/bg-img/shop9.jpg" alt="")
+                            // Love Products
+                            a.love-product(href="#" data-toggle="tooltip" data-placement="right" title="Like")
+                                i.lni-heart
+                        .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                            .product-name
+                                h6 Leather Shoe
+                                h6.price.mb-0 $76.38
+                            .product-add-to-cart
+                                // Add To Cart
+                                a(href="#")
+                                    i.lni-cart
+                                    
+    // Pagination Area
+    .saasbox-pagination-area.section-padding-0-120
+        nav(aria-label="Page navigation example")
+            ul.pagination.justify-content-center
+                li.page-item.active
+                    a.page-link(href="#") 1
+                li.page-item
+                    a.page-link(href="#") 2
+                li.page-item
+                    a.page-link(href="#") 3
+                li.page-item
+                    a.page-link(href="#") 4
+                li.page-item
+                    a.page-link(href="#") ...
+                li.page-item
+                    a.page-link(href="#") 9
+                            
+    include inc/cta-3.pug
+    
+    include inc/footer-2.pug

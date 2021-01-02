@@ -1,0 +1,71 @@
+// saasbox Features Area
+.saasbox-tab-area.section-padding-120
+    .container
+        .row.justify-content-center
+            .col-12.col-md-9.col-lg-6
+                .section-heading.text-center
+                    i.lni-crown
+                    h2 Awesome stunning feature for your website
+        .row
+          .col-12
+            .tab--area
+              ul#myTab.nav.nav-tabs(role="tablist")
+                li.nav-item
+                  a#tab--1.nav-link.active(data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true") Design & Development
+                li.nav-item
+                  a#tab--2.nav-link(data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false") Digital Marketing
+                li.nav-item
+                  a#tab--3.nav-link(data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false") Business Solution
+                  
+              #myTabContent.tab-content
+              
+                // Tab Pane
+                #tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="tab--1")
+                  .row.justify-content-between.align-items-center
+                    .col-12.col-md-6.col-xxl-5
+                      .tab--text.mt-5
+                        h6 Design & Development.
+                        h2 We provide best design & development solution.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil sint cumque omnis iure nisi.
+                        
+                        span.d-block.mt-4.mb-1 Clients Satisfaction Rate: 90%
+                        .progress
+                          .progress-bar(role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100")
+                          
+                    .col-12.col-md-6
+                      .tab-thumb.mt-5
+                        img(src="img/bg-img/4.png" alt="")
+                        
+                // Tab Pane
+                #tab2.tab-pane.fade(role="tabpanel" aria-labelledby="tab--2")
+                  .row.justify-content-between.align-items-center                        
+                    .col-12.col-md-6.col-xxl-5
+                      .tab-thumb.mt-5
+                        img(src="img/bg-img/bg-1.png" alt="")
+                        
+                    .col-12.col-md-6
+                      .tab--text.mt-5
+                        h6 Digital Marketing.
+                        h2 We provide digital marketing solution.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil sint cumque omnis iure nisi.
+                          
+                        span.d-block.mt-4.mb-1 Clients Return Rate: 70%
+                        .progress
+                          .progress-bar(role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                        
+                // Tab Pane
+                #tab3.tab-pane.fade(role="tabpanel" aria-labelledby="tab--3")
+                  .row.justify-content-between.align-items-center
+                    .col-12.col-md-6.col-xxl-5
+                      .tab--text.mt-5
+                        h6 Business Solution.
+                        h2 We provide creative business solution.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil sint cumque omnis iure nisi.
+                        
+                        span.d-block.mt-4.mb-1 Business Solution Rate: 85%
+                        .progress
+                          .progress-bar(role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+                          
+                    .col-12.col-md-6
+                      .tab-thumb.mt-5
+                        img(src="img/bg-img/bg-2.png" alt="")

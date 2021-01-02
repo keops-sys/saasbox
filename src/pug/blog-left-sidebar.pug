@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+  head  
+    include inc/head.pug
+    
+  body
+    include inc/loader.pug
+    
+    include inc/header.pug
+    
+    // Breadcrumb Area
+    .breadcrumb--area.bg-img.bg-overlay.jarallax(style="background-image: url('img/bg-img/12.jpg');")
+        .container.h-100
+            .row.h-100.align-items-center
+                .col-12
+                    .breadcrumb-content
+                        h2.breadcrumb-title Blog Left Sidebar
+                        nav(aria-label="breadcrumb")
+                            ol.breadcrumb.justify-content-center
+                                li.breadcrumb-item
+                                    a(href="index.html") Home
+                                li.breadcrumb-item.active(aria-current="page")
+                                    a(href="#") Blog
+    
+    // Blog Area
+    .saasbox--blog--area.section-padding-120
+        .container
+            .row.justify-content-between
+                .col-12.col-sm-6.col-md-5.col-lg-4.mb-5.mb-sm-0
+                    include inc/sidebar.pug
+            
+                .col-12.col-sm-6.col-md-7
+                    .row.g-5
+                        // Single Blog Post
+                        .col-12
+                            .card.blog-card.border-0.no-boxshadow.rounded-0
+                                a.d-block.mb-4(href="blog-card.html")
+                                    img(src="img/bg-img/blog19.jpg" alt="")
+                                .post-content
+                                    a.d-block.mb-1(href="blog-card.html") News
+                                    a.post-title.d-block.mb-3(href="blog-card.html")
+                                        h4 Seven ways agency can improve your business.
+                                    p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                                    .post-meta
+                                        span.text-muted 2 min read
+                                        
+                        // Single Blog Post
+                        .col-12
+                            .card.blog-card.border-0.no-boxshadow.rounded-0
+                                .image-wrap.mb-4
+                                    img(src="img/bg-img/blog20.jpg" alt="")
+                                    // Video
+                                    span.video-content
+                                        a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                            i.lni-play
+                                .post-content
+                                    a.d-block.mb-1(href="blog-card.html") News
+                                    a.post-title.d-block.mb-3(href="blog-card.html")
+                                        h4 Seven ways agency can improve your business.
+                                    p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                                    .post-meta
+                                        span.text-muted 2 min read
+                                        
+                        // Single Blog Post
+                        .col-12
+                            .card.blog-card.border-0.no-boxshadow.rounded-0
+                                .image-wrap.mb-4
+                                    img(src="img/bg-img/blog21.jpg" alt="")
+                                    // Video
+                                    span.video-content
+                                        a.video-play-btn(href="https://www.youtube.com/watch?v=lFGvqvPh5jI")
+                                            i.lni-play
+                                .post-content
+                                    a.d-block.mb-1(href="blog-card.html") News
+                                    a.post-title.d-block.mb-3(href="blog-card.html")
+                                        h4 Seven ways agency can improve your business.
+                                    p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                                    .post-meta
+                                        span.text-muted 2 min read
+                                        
+                        // Single Blog Post
+                        .col-12
+                            .card.blog-card.border-0.no-boxshadow.rounded-0
+                                a.d-block.mb-4(href="blog-card.html")
+                                    img(src="img/bg-img/blog22.jpg" alt="")
+                                .post-content
+                                    a.d-block.mb-1(href="blog-card.html") News
+                                    a.post-title.d-block.mb-3(href="blog-card.html")
+                                        h4 Seven ways agency can improve your business.
+                                    p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                                    .post-meta
+                                        span.text-muted 2 min read
+                                
+                    // Pagination Area
+                    .saasbox-pagination-area.mt-5
+                        nav(aria-label="Page navigation")
+                            ul.pagination.justify-content-center
+                                li.page-item.active
+                                    a.page-link(href="#") 1
+                                li.page-item
+                                    a.page-link(href="#") 2
+                                li.page-item
+                                    a.page-link(href="#") 3
+                                li.page-item
+                                    a.page-link(href="#") 4
+                                li.page-item
+                                    a.page-link(href="#") ...
+                                li.page-item
+                                    a.page-link(href="#") 9
+    
+    include inc/cta-3.pug
+    
+    include inc/footer.pug

@@ -1,0 +1,253 @@
+/* :: Pricing CSS */
+.pricing-card {
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    padding: 60px 50px;
+    background-color: $white;
+    overflow: hidden;
+
+    .pricing-heading {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 50px;
+
+        .price-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            i {
+                font-size: 4rem;
+                color: $yellow;
+            }
+        }
+
+        .price {
+            display: block;
+
+            h5 {
+                text-transform: uppercase;
+                color: $white;
+                font-size: 13px;
+                background-color: $primary;
+                border-radius: 0.25rem;
+                display: inline-block;
+                padding: 0.25rem 0.75rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 0;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 2rem;
+                }
+            }
+
+            span {
+                font-size: 1rem;
+                color: $text;
+            }
+        }
+    }
+
+    .pricing-desc {
+        position: relative;
+        z-index: 1;
+
+        ul li {
+            position: relative;
+            z-index: 1;
+            font-size: 1rem;
+            color: $text;
+            margin-bottom: 0.75rem;
+            padding-left: 25px;
+
+            &::before {
+                content: '\e94c';
+                font-family: "LineIcons";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                font-size: 1rem;
+                color: $primary;
+            }
+
+            &.times {
+                &::before {
+                    content: '\e94d';
+                    color: #d63031;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .pricing-btn {
+        position: relative;
+        z-index: 1;
+        margin-top: 50px;
+
+        .saasbox-btn {
+            border: 2px solid $border;
+            background-color: transparent;
+            color: $primary;
+            line-height: 44px;
+
+            &:hover,
+            &:focus {
+                color: $white;
+                border: 2px solid $primary;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &.active {
+        z-index: 100;
+        background-color: $white;
+        transform: scale(1.1);
+        box-shadow: 0 0 88px 2px rgba(47, 91, 234, 0.125);
+
+        @media #{$breakpoint-xs} {
+            transform: scale(1.05);
+        }
+
+        .saasbox-btn {
+            color: $white;
+            border: 2px solid $primary;
+            background-color: $primary;
+
+            &:hover,
+            &:focus {
+                border: 2px solid $border;
+                background-color: transparent;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.pricing-table-switch {
+    position: relative;
+    z-index: 1;
+
+    .nav-tabs .nav-item {
+        margin-bottom: 0;
+
+        .nav-link {
+            position: relative;
+            z-index: 1;
+            min-width: 125px;
+            text-align: center;
+            margin: 0 7.5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            padding: 10px 30px;
+            text-transform: capitalize;
+            background-color: $white;
+            border: 2px solid $border;
+
+            .popular-badge {
+                position: absolute;
+                padding: 5px 12px;
+                top: 0;
+                font-size: 12px;
+                right: -65%;
+                background-color: $green;
+                border-radius: 16px;
+                transform: translate(-50%, -50%);
+                color: $white;
+
+                @media #{$breakpoint-xs} {
+                    right: -50%;
+                }
+            }
+
+            &.active {
+                border-color: $primary;
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.saasbox-pricing-plan-area {
+    position: relative;
+    z-index: 1;
+
+    .price-shape img {
+        position: absolute !important;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0px;
+        z-index: -5;
+    }
+
+    &.price2 {
+        .price-shape img {
+            right: auto;
+            left: 0;
+        }
+
+        .pricing-card {
+            &.active {
+                background-color: $heading;
+                border: 0 !important;
+                overflow: hidden;
+
+                &::after {
+                    width: 600px;
+                    height: 600px;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: -1;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    top: -300px;
+                    left: -300px;
+                    content: "";
+                }
+
+                .pricing-heading .price h2 {
+                    color: $white;
+                }
+
+                .pricing-desc ul li {
+                    color: $white;
+
+                    &::before {
+                        color: $yellow;
+                    }
+
+                    &.times {
+                        &::before {
+                            color: #d63031;
+                        }
+                    }
+                }
+
+                .saasbox-btn {
+                    border: 0;
+                    background-color: $yellow;
+                    color: $heading;
+                    line-height: 50px;
+
+                    &:hover,
+                    &:focus {
+                        color: $white;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

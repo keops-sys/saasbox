@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+    head  
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb Area
+        .breadcrumb--area.bg-img.bg-overlay.jarallax(style="background-image: url('img/bg-img/12.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Team Member
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page")
+                                        a(href="#") Team
+        .container
+            // Team Members Area
+            .team-member-page.section-padding-120
+                .row.justify-content-center.g-5
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t1.jpg" alt="")
+                            .hover-overlay
+                                p Jannatun Lim,
+                                    span.ml-1 Designer
+
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t4.jpg" alt="")
+                            .hover-overlay
+                                p Shaila Jim,
+                                    span.ml-1 CEO
+                    
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t5.jpg" alt="")
+                            .hover-overlay
+                                p Nazrul Islam,
+                                    span.ml-1 CEO
+
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t6.jpg" alt="")
+                            .hover-overlay
+                                p Naznin,
+                                    span.ml-1 Manager
+
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t7.jpg" alt="")
+                            .hover-overlay
+                                p Jannatun Lim,
+                                    span.ml-1 Designer
+
+                    // Single Team
+                    .col-12.col-sm-8.col-md-6.col-lg-4
+                        .single-team
+                            img(src="img/bg-img/t8.jpg" alt="")
+                            .hover-overlay
+                                p Shaila Jim,
+                                    span.ml-1 CEO
+
+        include inc/cta-3.pug
+
+        .container
+            .border-top
+
+        include inc/footer.pug
