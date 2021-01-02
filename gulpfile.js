@@ -73,12 +73,12 @@ function pugToHtml() {
 }
 
 // SCSS - Pug Watching
-function watching() {
-    watch('src/scss/*.scss', series(sassToCss));
-    watch(['src/pug/*.pug', 'src/pug/inc/*.pug'], series(pugToHtml));
-}
+// function watching() {
+//     watch('src/scss/*.scss', series(sassToCss));
+//     watch(['src/pug/*.pug', 'src/pug/inc/*.pug'], series(pugToHtml));
+// }
 
-const watching2 = parallel(watching);
+//const watching2 = parallel(watching);
 
 // exports
 //exports.watch = watching2;
