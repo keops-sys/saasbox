@@ -81,5 +81,5 @@ function watching() {
 const watching2 = parallel(watching);
 
 // exports
-exports.watch = watching2;
-exports.default = series(js, css, fafonts, flagIcons, cssAutoprefixer, sassToCss, pugToHtml, watching);
+//exports.watch = watching2;
+exports.default = series(js, css, fafonts, flagIcons, cssAutoprefixer, sassToCss, pugToHtml);
